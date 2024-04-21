@@ -45,7 +45,13 @@ Use "kubectl krew [command] --help" for more information about a command.
 
 ```
 
-2. Check the list of existing plugins
+2. Copy kubeplugin to /user/local/bin/ directory
+
+```sh
+sudo cp ./kubeplugin /usr/local/bin/kubectl-kubeplugin
+```
+
+3. Check the list of existing plugins
 
 ```sh
 $ kubectl plugin list
@@ -56,7 +62,7 @@ $ kubectl plugin list
 
 ```
 
-3. Plugin usage:
+4. Plugin usage:
 
 ```sh
 $ k kubeplugin pod kube-system
